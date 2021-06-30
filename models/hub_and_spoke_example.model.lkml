@@ -1,9 +1,11 @@
 connection: "super_store"
 
+include: "/**/*.view.lkml"
 
+explore: hub_and_spoke_view {}
 
 # include: "//hub_and_spoke_example/views/*.view.lkml"                # include all views in the views/ folder in this project
- include: "/**/*.view.lkml"                 # include all views in this project
+# include: "/**/*.view.lkml"                 # include all views in this project
 # include: "my_dashboard.dashboard.lookml"   # include a LookML dashboard called my_dashboard
 
 # # Select the views that should be a part of this model,
@@ -27,9 +29,9 @@ connection: "super_store"
 # include: "/**/*.model.lkml"
 # include: "/**/*.explore.lkml"
 
-explore: hub_and_spoke_view {
-   #extends: [superstore_orders]
-}
+# explore: hub_and_spoke_view {
+#   #extends: [superstore_orders]
+# }
 
 # explore: my_explore {
 #   extends: [super_store_model]
