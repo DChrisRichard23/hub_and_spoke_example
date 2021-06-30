@@ -24,11 +24,13 @@ connection: "super_store"
 #include: "//super_store/views/superstore_orders.view.lkml"
 # include: "//super_store/models/*.model.lkml"
 # include: "//super_store/explores/*.explore.lkml"
+# include: "/**/*.model.lkml"
+# include: "/**/*.explore.lkml"
 
 explore: hub_and_spoke_view {
-  # extends: [superstore_orders]
+   #extends: [superstore_orders]
 }
 
 # explore: my_explore {
-#   extends: [superstore_orders]
+#   extends: [super_store_model]
 # }
