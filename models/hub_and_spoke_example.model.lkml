@@ -4,6 +4,17 @@ include: "/**/*.view.lkml"
 
 explore: hub_and_spoke_view {}
 
+
+
+# include: "//super_store/models/*.model.lkml"
+# explore: new_explore {
+#   extends: [superstore_orders]
+# }
+
+
+
+
+
 # include: "//hub_and_spoke_example/views/*.view.lkml"                # include all views in the views/ folder in this project
 # include: "/**/*.view.lkml"                 # include all views in this project
 # include: "my_dashboard.dashboard.lookml"   # include a LookML dashboard called my_dashboard
