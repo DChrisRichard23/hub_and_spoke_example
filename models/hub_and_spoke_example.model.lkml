@@ -1,4 +1,5 @@
-connection: "super_store"
+# connection: "super_store"
+include: "//super_store/models/*.model.lkml"
 
 include: "/**/*.view.lkml"
 
@@ -6,10 +7,11 @@ explore: hub_and_spoke_view {}
 
 
 
-# include: "//super_store/models/*.model.lkml"
-# explore: new_explore {
-#   extends: [superstore_orders]
-# }
+
+explore: new_explore {
+  extends: [superstore_orders]
+  view_name: superstore_orders
+}
 
 
 
