@@ -10,4 +10,10 @@ view: superstore_orders_spoke {
     value_format: "$#,###.00"
   }
 
+  measure: sales_per_customer2 {
+    type: number
+    sql: ${total_sales} / ${customers} ;;
+    value_format: "$#,###.00"
+  }
+
 }
